@@ -15,7 +15,7 @@ extension UIApplication {
         .first?.windows
         .filter({$0.isKeyWindow}).first
     
-    public func keyWindowVC(vc: UIViewController?) -> UIViewController? {
+    static func keyWindowVC(vc: UIViewController?) -> UIViewController? {
         if let nc = vc as? UINavigationController {
             return self.keyWindowVC(vc: nc.visibleViewController)
         } else if let tc = vc as? UITabBarController {

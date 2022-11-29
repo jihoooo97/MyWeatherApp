@@ -5,8 +5,8 @@
 //  Created by JihoMac on 2022/11/22.
 //
 
-import UIKit
+import Foundation
 
-class BaseUseCase: NSObject {
+protocol BaseUseCase {
 
 }

@@ -5,8 +5,17 @@
 //  Created by JihoMac on 2022/11/22.
 //
 
-import UIKit
+import Foundation
+import Swinject
 
-class ViewControllerAssembly: NSObject {
-
+final class ViewControllerAssembly: Assembly {
+    
+    func assemble(container: Container) {
+        container.register(HomeViewController.self) { r in
+            let viewController = HomeViewController()
+            viewController.viewModel = r.resolve(HomeViewModel.self)
+            return viewController
+        }
+    }
+    
 }

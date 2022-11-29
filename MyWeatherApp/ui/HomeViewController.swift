@@ -11,7 +11,9 @@ import Then
 import RxSwift
 import RxCocoa
 
-final class HomeViewController: UIViewController, ViewController {
+final class HomeViewController: UIViewController {
+  
+    var viewModel: HomeViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,21 +21,26 @@ final class HomeViewController: UIViewController, ViewController {
         
     }
 
-    func initAttributes() {
-        <#code#>
-    }
-    
-    func initUI() {
-        <#code#>
-    }
     
     func inputBind() {
-        <#code#>
+        
     }
     
     func outputBind() {
-        <#code#>
+        
     }
     
 }
 
+
+extension HomeViewController: ViewController {
+
+    func initAttributes() {
+        
+    }
+    
+    func initUI() {
+        
+    }
+    
+}

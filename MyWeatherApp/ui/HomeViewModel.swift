@@ -5,8 +5,11 @@
 //  Created by JihoMac on 2022/11/22.
 //
 
-import UIKit
+import Foundation
+import RxSwift
 
-class HomeViewModel: NSObject {
-
+final class HomeViewModel: ViewModel {
+    
+    var useCase: HomeUseCase!
+    
 }

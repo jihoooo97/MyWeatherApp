@@ -5,8 +5,15 @@
 //  Created by JihoMac on 2022/11/23.
 //
 
-import UIKit
+import Foundation
+import Swinject
 
-class UseCaseAssembly: NSObject {
-
+final class UseCaseAssembly: Assembly {
+    
+    func assemble(container: Container) {
+        container.register(HomeUseCase.self) { r in
+            HomeUseCase()
+        }
+    }
+    
 }

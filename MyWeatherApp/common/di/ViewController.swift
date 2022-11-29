@@ -7,6 +7,11 @@
 
 import UIKit
 
-class ViewController: NSObject {
+protocol ViewController {
 
+    func initAttributes()
+    func initUI()
+    func inputBind()
+    func outputBind()
+    
 }

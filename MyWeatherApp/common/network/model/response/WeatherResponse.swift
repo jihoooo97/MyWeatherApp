@@ -5,8 +5,16 @@
 //  Created by JihoMac on 2022/11/29.
 //
 
-import UIKit
+import Foundation
 
-class WeatherResponse: NSObject {
+struct WeatherResponse: ApiResponse {
+    var coord: Coordinate
+}
 
+struct Coordinate: Codable {
+    
+}
+
+struct Weahter: Codable {
+    
 }

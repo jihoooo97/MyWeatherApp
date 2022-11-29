@@ -1,10 +1,3 @@
-//
-//  TabBarController.swift
-//  Lotty
-//
-//  Created by JihoMac on 2022/11/07.
-//
-
 import UIKit
 
 class TabBarController: UITabBarController {
